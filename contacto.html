@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Global Lingua</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Formulario de registro de aspirantes y preguntas.">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <a class="logo" href="index.html"><img src="images/logo-idiomas.png" alt="Logo"><span>Global Lingua</span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="sucursales.html">Sucursales</a></li>
+          <li><a href="contacto.html" aria-current="page">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registro de aspirantes </h2>
+      <form action="#" method="get">
+        <label>Nombre completo
+          <input name="nombre" required placeholder="Tu nombre">
+        </label>
+        <label>Correo electrónico
+          <input type="email" name="correo" required placeholder="ejemplo@correo.com">
+        </label>
+        <label>Idioma de interés
+          <select name="idioma" required>
+            <option value="">Selecciona…</option>
+            <option>Inglés</option>
+            <option>Francés</option>
+            <option>Alemán</option>
+          </select>
+        </label>
+        <label>Sucursal preferida
+          <select name="sucursal">
+            <option>Campus Timoteo</option>
+            <option>Campus Colinas</option>
+            <option>Campus Portales</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" placeholder="Cuéntanos de ti"></textarea>
+        </label>
+        <button type="submit">Enviar (demo)</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Preguntas</h2>
+      <form action="#" method="get">
+        <label>Tu pregunta:
+          <textarea name="pregunta" rows="3" placeholder="Escribe aquí…"></textarea>
+        </label>
+        <button type="submit">Registrar pregunta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-in">
+      <small class="small">© 2025 Global Lingua</small>
+      <small class="small">info@globallingua.edu</small>
+    </div>
+  </footer>
+</body>
+</html>
